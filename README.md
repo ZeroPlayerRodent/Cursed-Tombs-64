@@ -18,3 +18,8 @@ When playing the game in a web browser, use the arrow keys as the joystick and s
 Use the JOYSTICK to move, and press the FIRE button to toggle your flashlight.
 
 Avoid the various enemies and make your way to the top of the screen to score points.
+
+### Enemy Types
+* Ghosts: These enemies will bounce around the screen.
+* Zombies: Zombies stay still in the dark, but will chase you while your flashlight is on.
+* Demons: The Demons stay off-screen until they hear you bump into a wall. When you bump into something, they will reveal themselves and chase you!
