@@ -780,10 +780,11 @@ DontMoveThem
         ldy FURTHEST
         jsr IsXaboveY
         cpx #0
-        bne DontPlayerUp
+        bne DontPlayerDown
         ldx $D001
         stx FURTHEST
         jsr AddPoint
+        jmp DontPlayerDown
 DontPlayerUp
 	lda #%000000010
         bit JOY_INPUT
@@ -800,6 +801,7 @@ DontPlayerDown
         stx LAST_X
         inx
         stx $D000
+        jmp DontPlayerLeft
 DontPlayerRight
 	lda #%00000100
         bit JOY_INPUT
